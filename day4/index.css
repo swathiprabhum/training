@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    top: 0;
+} 
+.header{
+    border: 1px solid navy;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+    align-items: center;
+}
+
+.header img{
+    background-color: white;
+}
+
+.search{
+    height: 30px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    font-size: large;
+    padding: 8px;
+    width: 400px;
+}
+.search input{
+    border: none;
+}
+
+.login{
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    border: none;
+}
+
+.login button{
+    height: 35px;
+    border: none;
+    background-color: white;
+    font-size: 18px;
+}
+
+.cart{
+    padding: 10px;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.seller{
+    padding: 10px;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.item-headers{
+    height: 150px;
+    margin: 10px;
+    border-bottom: 1px solid rgb(213, 215, 219);
+    padding-left: 10px;
+    line-height: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel{
+    border: 1px solid navy;
+    margin: 10px;
+    background-color: rgb(248, 240, 240);
+}
+
+.top-deals{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 200px;
+    margin: 10px;
+    padding: 15px;
+}
+
+.top-deals-images{
+    display: flex;
+}
+.top-deals-image{    
+    height: 150px;
+    width: 200px;
+    background-color: white;
+}
+
+.fashion{
+    display: flex;
+    padding: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.fashion-divs{
+    width: 32%;
+    margin-right: 25px ;
+}
+
+.fashion-divs h3{    
+    margin-left: 25px ;
+}
+.fashion-image h4{
+    color: #108934;
+}
+
+.layout-grid{
+    display: grid;
+    margin: 10px;
+    grid-template-columns: repeat(2,45%);
+    grid-template-rows: repeat(2,45%);
+    gap: 5%;
+    padding: 20px;
+}
