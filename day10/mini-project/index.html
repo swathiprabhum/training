@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Management System</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Grade Management System</h2>
+        <input type="text" id="name" placeholder="Enter name">
+        <input type="number" id="m1" placeholder="Subject 1">
+        <input type="number" id="m2" placeholder="Subject 2">
+        <input type="number" id="m3" placeholder="Subject 3">
+        <button onclick="addStudent()">Calculate Grade</button>        
+    <table id="gradeTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Subject 1</th>
+                <th>Subject 2</th>
+                <th>Subject 3</th>
+                <th>Total</th>
+                <th>Average</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody id="result">
+        </tbody>
+    </table>
+    </div>
+    <script src="index.js"></script>
+    
+</body>
+</html>
