@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Task Management</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h2>Student Task Management</h2>
+    <input type="text" id="title" placeholder="Task Title">
+    <select id = "priority">
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+    </select>
+
+    <button onclick="addTask()">Add Task</button>
+    <button onclick="saveTasks()">Save Tasks</button>
+
+    <table border="1" >
+        <thead>
+            <tr>
+                <th>ID </th>
+                <th>Title</th>
+                <th>Priority</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="taskTable">
+            <!-- Task rows will be added here dynamically -->
+        </tbody>
+    </table>
+    <script src="index.js"></script>
+</body>
+</html>
