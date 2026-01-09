@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!--A dashboard that manages student marks.-->
+    <h1>Student Performance Dashboard</h1>
+    <div id="student-form">
+        <input type="number" id="id" placeholder="ID"> 
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="marks" placeholder="Marks">
+        <button id="add">Add Student</button>
+    </div>
+    <div>
+        <table id="student-list">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Marks</th>
+                    <th>Total</th>
+                    <th>Average</th>
+                    <th>Grade</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="student-table-body">
+                <!-- Student rows will be populated here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
