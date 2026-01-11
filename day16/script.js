@@ -1,4 +1,4 @@
-const API_URL = 'https://localhost:3001/todos';
+const API_URL = 'http://localhost:3001/todos';
 
 // Load todos
 document.addEventListener('DOMContentLoaded', loadtodos);
@@ -36,3 +36,57 @@ function displayTodos(todos){
         li.appendChild(deleteBtn);
         todoList.appendChild(li);
 }) };
+
+// POST
+function addTodo(){
+    const input = document.getElementById("taskInput");
+    const task = input.value.trim();
+
+    if(task === ""){
+        alert("Enter the task");
+        return;
+    }
+
+    fetch(API_URL,{
+        method: "POST",
+        headers:{
+            "Content-type": "application/json"
+        },
+        body: JSON.stringify({
+            task: task,
+            completed: false
+        })
+    })
+    .then(() => {
+        input.value = "";
+        loadTodos();
+    })
+    .catch(error => console.error("error adding todo",error))
+}
+
+
+// PATCH/PUT
+
+function toggleTodo(todo){
+    fetch(`${API_URL}/${todo.id}`, {
+        method : "PATCH",
+        headers: {
+            "Content-type": "application/json"
+        },
+        body: JSON.stringify({
+            completed: !todo.completed
+        })
+    })
+    .then(loadTodos)
+    .catch(error => console.error("Error updating todo:",error))
+}
+
+// Delete
+
+function deleteTodo(id){
+    fetch(`${API_URL}/${id}`, {
+        method: "DELETE"
+    })
+    .then(loadTodos)
+     .catch(error => console.error("Error Deleting todo:",error))
+}
