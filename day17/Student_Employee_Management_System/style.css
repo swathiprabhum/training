@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  font-family: Segoe UI, Roboto, Arial, sans-serif;
+}
+
+body {
+  background: #f4f7fb;
+  color: #222;
+  margin: 0;
+  padding: 24px;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0 0 18px;
+  font-size: 24px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .08);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #d6dbe0;
+  border-radius: 4px;
+  margin-top: 6px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 0;
+  cursor: pointer;
+}
+
+#save-btn {
+  background: #2563eb;
+  color: #fff;
+}
+
+#reset-btn {
+  background: #e6eefc;
+  color: #2563eb;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+th,
+td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #eef3f7;
+  text-align: left;
+  font-size: 14px;
+}
+
+th {
+  background: #fbfdff;
+}
+
+.actions button {
+  margin-right: 6px;
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+
+.btn-edit {
+  background: #10b981;
+  color: #fff;
+}
+
+.btn-delete {
+  background: #ef4444;
+  color: #fff;
+}
+
+

@@ -1,0 +1,11 @@
+{
+  "records": [
+    {
+      "type": "Student",
+      "name": "John Doe1",
+      "email": "john.doe1@example.com",
+      "extra": "M Business Administration",
+      "id": "1"
+    }
+  ]
+}
